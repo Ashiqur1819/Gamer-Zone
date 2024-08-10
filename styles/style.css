@@ -17,7 +17,8 @@ body{
 }
 
 .hero-container,
-.gamer-section{
+.gamer-section,
+.games-section{
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
@@ -28,6 +29,9 @@ section{
 }
 
 /* Shared styles starts here */
+span{
+  color: rgb(255, 66, 165);
+}
 .btn{
   padding: 20px 50px;
   margin-right: 25px;
@@ -41,7 +45,6 @@ section{
   cursor: pointer;
 }
 .title{
-  color: #ff42a5;
   font-size: 3rem;
   font-weight: 700;
   line-height: 50px;
@@ -76,9 +79,6 @@ section{
   font-size: 3rem;
   font-weight: 700;
   line-height: 50px;
-}
-.nav-brands > h1 > span{
-  color: rgb(255, 66, 165);
 }
 .nav-links{
   gap: 50px;
@@ -185,6 +185,9 @@ section{
 .gamer-content{
   width: 90%;
 }
+.gamer-title{
+  color: #ff42a5;
+}
 .gamer-title, .gamer-description{
   margin-bottom: 25px;
 }
@@ -207,15 +210,74 @@ section{
 }
 /* Gamer section ends here */
 
+/* Games section starts here */
+.games-section{
+  text-align: center;
+  margin-top: 100px;
+  background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+}
+.games-title{
+  color: rgb(11, 2, 35);
+  margin-bottom: 10px;
+}
+.games-container{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+.games-card-header > img{
+  width: 100%;
+  height: 100%;
+}
+.games-card-header{
+  margin-bottom: 10px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 2px rgb(187, 187, 187);
+}
+#special-games-card{
+  position: relative;
+  border: 3px solid #ff42a5;
+  border-radius: 20px;
+}
+#special-games-card > img{
+  filter: brightness(30%);
+}
+.games-card-header-item{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  filter: brightness(100%);
+  text-align: center;
+}
+.games-card-header-item > a{
+  color: white;
+  font-size: 1.5rem;
+}
+.games-card-header-item > a > i{
+  margin-bottom: 10px;
+}
+.games-card-header-item > p{
+  color: #ff42a5;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.games-card-footer > p{
+  font-weight: 500;
+}
+/* Games section ends here */
+
 
 
 /*============================= Responsive design starts here (For mobile) =================================*/
 @media screen and (max-width:576px) {
 
 /* Shared styles starts here */
-section{
-  margin-top: 25px;
-}
 .navbar,
 .nav-links,
 .nav-items,
@@ -226,6 +288,12 @@ section{
 .nav-links,
 .nav-items{
   gap: 15px;
+}
+.hero-sub-title,
+.gamer-title,
+.games-title{
+  font-size: 2.3rem;
+  line-height: 40px;
 }
 .btn{
   padding: 15px 25px;
@@ -249,10 +317,6 @@ section{
 .hero-img{
   width: 100%;
 }
-.hero-sub-title{
-  font-size: 2.3rem;
-  line-height: 40px;
-}
 .hero-title{
   font-size: 4rem;
   line-height: 60px;
@@ -271,6 +335,16 @@ section{
   width: 100%;
 }
 /* Gamer section ends here */
+
+/* Games section starts here */
+.games-section{
+  margin-top: 50px;
+}
+.games-container{
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+/* Games section ends here */
 
 
 }
@@ -309,5 +383,18 @@ section{
   width: 100%;
 }
 /* Gamer section ends here */
+
+/* Games section starts here */
+.games-section{
+  margin-top: 50px;
+}
+.games-container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.games-card{
+  margin-bottom: 30px;
+}
+/* Games section starts here */
 }
 /*============================= Responsive design ends here (For tablet) =================================*/
