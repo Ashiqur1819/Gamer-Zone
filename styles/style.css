@@ -18,7 +18,8 @@ body{
 
 .hero-container,
 .gamer-section,
-.games-section{
+.games-section,
+.play-instant-section{
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
@@ -47,7 +48,7 @@ span{
 .title{
   font-size: 3rem;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 60px;
 }
 .description{
   color: rgb(83, 76, 100);
@@ -272,6 +273,31 @@ span{
 }
 /* Games section ends here */
 
+/* Play instant section starts here */
+.play-instant-section{
+  margin-top: 50px;
+}
+.play-instant-container{
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+.play-instant-content{
+  text-align: right;
+}
+.play-instant-title{
+  margin-bottom: 25px;
+}
+.play-instant-image{
+  position: relative;
+}
+.instant-second-img{
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+}
+/* Play instant section ends here */
+
 
 
 /*============================= Responsive design starts here (For mobile) =================================*/
@@ -281,7 +307,8 @@ span{
 .navbar,
 .nav-links,
 .nav-items,
-.gamer-container{
+.gamer-container,
+.play-instant-container{
   flex-direction: column;
 }
 .navbar,
@@ -346,6 +373,28 @@ span{
 }
 /* Games section ends here */
 
+/* Play instant section starts here */
+.play-instant-container{
+  gap: 50px;
+}
+.play-instant-content{
+  text-align: center;
+}
+.play-instant-image{
+  text-align: right;
+  width: 100%;
+}
+.instant-main-img{
+  width: 85%;
+}
+.instant-second-img{
+  width: 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+/* Play instant section ends here */
+
 
 }
 /*============================= Responsive design ends here (For mobile) =================================*/
@@ -357,7 +406,8 @@ span{
 
 /* Shared styles starts here */
 .navbar,
-.gamer-container{
+.gamer-container,
+.play-instant-container{
   flex-direction: column;
 }
 /* Shared styles ends here */
@@ -396,5 +446,27 @@ span{
   margin-bottom: 30px;
 }
 /* Games section starts here */
+
+/* Play instant section section starts here */
+.play-instant-container{
+  gap: 50px;
+}
+.play-instant-content{
+  text-align: center;
+}
+.play-instant-image{
+  text-align: right;
+  width: 100%;
+}
+.instant-main-img{
+  width: 85%;
+}
+.instant-second-img{
+  width: 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+/* Play instant section section ends here */
 }
 /*============================= Responsive design ends here (For tablet) =================================*/
