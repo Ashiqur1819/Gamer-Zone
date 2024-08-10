@@ -16,7 +16,8 @@ body{
   font-family: "Work Sans", sans-serif;
 }
 
-.hero-container{
+.hero-container,
+.gamer-section{
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
@@ -27,14 +28,6 @@ section{
 }
 
 /* Shared styles starts here */
-.navbar,
-.nav-brands,
-.nav-links,
-.nav-items,
-.nav-social{
-  display: flex;
-  align-items: center;
-}
 .btn{
   padding: 20px 50px;
   margin-right: 25px;
@@ -42,10 +35,22 @@ section{
   border-radius: 48px;
   background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
   color: rgb(255, 255, 255);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
+}
+.title{
+  color: #ff42a5;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+.description{
+  color: rgb(83, 76, 100);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
 }
 /* Shared styles ends here */
 
@@ -55,6 +60,14 @@ section{
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+}
+.navbar,
+.nav-brands,
+.nav-links,
+.nav-items,
+.nav-social{
+  display: flex;
+  align-items: center;
 }
 .nav-brands{
   gap: 15px;
@@ -153,6 +166,47 @@ section{
 }
 /* Hero section ends here */
 
+/* Gamer section starts here */
+.gamer-section{
+  margin-top: 50px;
+}
+.gamer-container{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  text-align: right;
+}
+.gamer-image{
+  width: 100%;
+}
+.gamer-image img{
+  width: 110%;
+}
+.gamer-content{
+  width: 90%;
+}
+.gamer-title, .gamer-description{
+  margin-bottom: 25px;
+}
+#gamer-btn{
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.gamer-content > h5{
+  color: rgb(97, 89, 116);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.gamer-content > h3{
+  color: rgb(83, 76, 100);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 45px;
+}
+/* Gamer section ends here */
+
 
 
 /*============================= Responsive design starts here (For mobile) =================================*/
@@ -164,7 +218,8 @@ section{
 }
 .navbar,
 .nav-links,
-.nav-items{
+.nav-items,
+.gamer-container{
   flex-direction: column;
 }
 .navbar,
@@ -207,6 +262,16 @@ section{
 }
 /* Hero section ends here */
 
+/* Gamer section starts here */
+.gamer-container{
+  text-align: center;
+  gap: 50px;
+}
+.gamer-image > img{
+  width: 100%;
+}
+/* Gamer section ends here */
+
 
 }
 /*============================= Responsive design ends here (For mobile) =================================*/
@@ -217,11 +282,17 @@ section{
 @media screen and (min-width:576px) and (max-width:992px) {
 
 /* Shared styles starts here */
-.navbar{
+.navbar,
+.gamer-container{
   flex-direction: column;
-  gap: 25px;
 }
 /* Shared styles ends here */
+
+/* Header section starts here */
+.navbar{
+  gap: 25px;
+}
+/* Header section ends here */
 
 /* Hero section starts here */
 .hero-container{
@@ -229,5 +300,14 @@ section{
   gap: 50px;
 }
 /* Hero section ends here */
+
+/* Gamer section starts here */
+.gamer-container{
+  text-align: center;
+}
+.gamer-image > img{
+  width: 100%;
+}
+/* Gamer section ends here */
 }
 /*============================= Responsive design ends here (For tablet) =================================*/
