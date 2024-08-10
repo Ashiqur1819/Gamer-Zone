@@ -20,7 +20,8 @@ body{
 .gamer-section,
 .games-section,
 .play-instant-section,
-.play-online-section{
+.play-online-section,
+.badge-section{
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
@@ -382,6 +383,36 @@ span{
   margin-top: 50px;
 }
 /* Careers section ends here */
+
+/* Badge section starts here */
+.badge-section{
+  background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+  margin-top: 0;
+}
+.badge-container{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+.badge{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 7px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+}
+.badge > h4{
+  font-family: 1.1rem;
+  color: rgb(11, 2, 35);
+}
+#special-badge{
+  border: 1px solid #ff42a5;
+  color: #ff42a5;
+}
+/* Badge section ends here */
 
 
 
