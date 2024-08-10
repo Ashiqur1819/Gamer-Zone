@@ -13,17 +13,17 @@
 }
 
 body{
-  padding: 0 25px;
   font-family: "Work Sans", sans-serif;
 }
 
-main{
+.hero-container{
   max-width: 1440px;
-  margin:  0 auto;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 section{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 /* Shared styles starts here */
@@ -35,6 +35,18 @@ section{
   display: flex;
   align-items: center;
 }
+.btn{
+  padding: 20px 50px;
+  margin-right: 25px;
+  border: none;
+  border-radius: 48px;
+  background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 /* Shared styles ends here */
 
 /* Header section starts here */
@@ -42,7 +54,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 25px;
 }
 .nav-brands{
   gap: 15px;
@@ -91,12 +103,65 @@ section{
 }
 /* Header section ends here */
 
+/* Hero section starts here */
+.hero-section{
+  background-image: url("../images/group-14.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: linear-gradient(223.23deg, rgba(140, 87, 238, 0.03) 3.979%,rgba(241, 68, 174, 0.03) 100.54%);
+}
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-sub-title{
+  color: rgb(11, 2, 35);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.hero-title{
+  color: #ff42a5;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 100px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.hero-description{
+  color: rgb(83, 76, 100);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 35px;
+}
+.play, .download, .user-group{
+  color: #ff42a5;
+  margin-right: 7px;
+}
+.user-group{
+  margin-right: 3px;
+}
+.hero-buttons{
+  margin-top: 50px;
+}
+#btn-2{
+  background: rgb(78, 197, 247);
+}
+/* Hero section ends here */
+
 
 
 /*============================= Responsive design starts here (For mobile) =================================*/
 @media screen and (max-width:576px) {
 
 /* Shared styles starts here */
+section{
+  margin-top: 25px;
+}
 .navbar,
 .nav-links,
 .nav-items{
@@ -107,7 +172,40 @@ section{
 .nav-items{
   gap: 15px;
 }
+.btn{
+  padding: 15px 25px;
+  font-size: .9rem;
+  margin-right: 10px;
+}
 /* Shared styles ends here */
+
+/* Hero section starts here */
+.hero-section{
+  background-image: none;
+  background: linear-gradient(223.23deg, rgba(140, 87, 238, 0.03) 3.979%,rgba(241, 68, 174, 0.03) 100.54%);
+}
+.hero-container{
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.hero-image{
+  width: 100%;
+}
+.hero-img{
+  width: 100%;
+}
+.hero-sub-title{
+  font-size: 2.3rem;
+  line-height: 40px;
+}
+.hero-title{
+  font-size: 4rem;
+  line-height: 60px;
+}
+.hero-description{
+  font-size: .9rem;
+}
+/* Hero section ends here */
 
 
 }
@@ -124,5 +222,12 @@ section{
   gap: 25px;
 }
 /* Shared styles ends here */
+
+/* Hero section starts here */
+.hero-container{
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+/* Hero section ends here */
 }
 /*============================= Responsive design ends here (For tablet) =================================*/
