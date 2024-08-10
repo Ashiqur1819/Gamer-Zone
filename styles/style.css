@@ -19,7 +19,8 @@ body{
 .hero-container,
 .gamer-section,
 .games-section,
-.play-instant-section{
+.play-instant-section,
+.play-online-section{
   max-width: 1440px;
   margin: 0 auto;
   padding: 25px;
@@ -298,6 +299,29 @@ span{
 }
 /* Play instant section ends here */
 
+/* Play online section starts here */
+.play-online-section{
+  margin-top: 170px;
+}
+.play-online-container{
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+
+.play-online-title{
+  margin-bottom: 25px;
+}
+.play-online-image{
+  position: relative;
+}
+.online-second-img{
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+}
+/* Play online section ends here */
+
 
 
 /*============================= Responsive design starts here (For mobile) =================================*/
@@ -395,6 +419,32 @@ span{
 }
 /* Play instant section ends here */
 
+/* Play online section starts here */
+.play-online-section{
+  margin-top: 50px;
+}
+.play-online-container{
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.play-online-content{
+  text-align: center;
+}
+.play-online-image{
+  text-align: right;
+  width: 100%;
+}
+.online-main-img{
+  width: 85%;
+}
+.online-second-img{
+  width: 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+/* Play online section ends here */
+
 
 }
 /*============================= Responsive design ends here (For mobile) =================================*/
@@ -407,7 +457,8 @@ span{
 /* Shared styles starts here */
 .navbar,
 .gamer-container,
-.play-instant-container{
+.play-instant-container
+{
   flex-direction: column;
 }
 /* Shared styles ends here */
@@ -468,5 +519,31 @@ span{
   left: 0;
 }
 /* Play instant section section ends here */
+
+/* Play online section section starts here */
+.play-online-section{
+  margin-top: 100px;
+}
+.play-online-container{
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.play-online-content{
+  text-align: center;
+}
+.play-online-image{
+  text-align: right;
+  width: 100%;
+}
+.online-main-img{
+  width: 85%;
+}
+.online-second-img{
+  width: 30%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+/* Play online section section ends here */
 }
 /*============================= Responsive design ends here (For tablet) =================================*/
