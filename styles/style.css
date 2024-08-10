@@ -1,8 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-regular{
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding: 0 25px;
+  font-family: "Work Sans", sans-serif;
+}
+
+main{
+  max-width: 1440px;
+  margin:  0 auto;
+}
+
+section{
+  margin-top: 100px;
+}
+
+/* Shared styles starts here */
+.navbar,
+.nav-brands,
+.nav-links,
+.nav-items,
+.nav-social{
+  display: flex;
+  align-items: center;
+}
+/* Shared styles ends here */
+
+/* Header section starts here */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.nav-brands{
+  gap: 15px;
+}
+.nav-brands > h1{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+.nav-brands > h1 > span{
+  color: rgb(255, 66, 165);
+}
+.nav-links{
+  gap: 50px;
+}
+.nav-items{
+  gap: 35px;
+}
+.nav-social{
+  gap: 25px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+.nav-item{
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  color: rgb(60, 53, 79);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.nav-social > p{
+  color: rgb(60, 53, 79);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.nav-social > a > .youtube{
+  color: rgb(246, 28, 13);
+}
+.nav-social > a > .tiktok{
+  color: rgb(0, 0, 0);
+}
+/* Header section ends here */
+
+
+
+/*============================= Responsive design starts here (For mobile) =================================*/
+@media screen and (max-width:576px) {
+
+/* Shared styles starts here */
+.navbar,
+.nav-links,
+.nav-items{
+  flex-direction: column;
+}
+.navbar,
+.nav-links,
+.nav-items{
+  gap: 15px;
+}
+/* Shared styles ends here */
+
+
+}
+/*============================= Responsive design ends here (For mobile) =================================*/
+
+
+
+/*============================= Responsive design starts here (For tablet) =================================*/
+@media screen and (min-width:576px) and (max-width:992px) {
+
+/* Shared styles starts here */
+.navbar{
+  flex-direction: column;
+  gap: 25px;
+}
+/* Shared styles ends here */
+}
+/*============================= Responsive design ends here (For tablet) =================================*/
